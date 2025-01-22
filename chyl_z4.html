@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #333;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: none;
+            font-family: monospace;
+            background-color: #f9f9f9;
+            resize: none;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        u {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
+
+    <table>
+        <tr>
+            <td>
+                <u><strong>1. Inline CSS</strong></u>
+                <p>Stylizacja dodawana bezpośrednio w atrybucie elementu HTML.</p>
+                <textarea readonly>
+&lt;p style="color: red; font-size: 16px;"&gt;Przykład tekstu&lt;/p&gt;
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u><strong>2. Internal CSS</strong></u>
+                <p>Stylizacja dodawana w sekcji <code>&lt;style&gt;</code> w kodzie HTML.</p>
+                <textarea readonly>
+&lt;style&gt;
+  p {
+    color: blue;
+    font-size: 18px;
+  }
+&lt;/style&gt;
+&lt;p&gt;Przykład tekstu&lt;/p&gt;
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u><strong>3. External CSS</strong></u>
+                <p>Stylizacja ładowana z zewnętrznego pliku CSS.</p>
+                <textarea readonly>
+&lt;link rel="stylesheet" href="style.css"&gt;
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u><strong>4. CSS w Import</strong></u>
+                <p>Stylizacja importowana za pomocą reguły <code>@import</code>.</p>
+                <textarea readonly>
+&lt;style&gt;
+  @import url("style.css");
+&lt;/style&gt;
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u><strong>5. Stylizacja za pomocą Frameworka</strong></u>
+                <p>Stylizacja z użyciem gotowych bibliotek CSS, np. Bootstrap.</p>
+                <textarea readonly>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

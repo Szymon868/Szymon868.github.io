@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Formatting Features</title>
+    <style>
+        /* Style for the header */
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Style for the table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Style for lists */
+        ol, ul {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML and CSS Formatting Features</h1>
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>HTML</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>Font Styling</td>
+            <td>Ograniczone opcje przy użyciu tagów takich jak <code>&lt;b&gt;</code> i <code>&lt;i&gt;</code>.</td>
+            <td>Rozbudowana kontrola dzięki właściwościom takim jak <code>font-family</code>, <code>font-size</code>, i <code>font-weight</code>.</td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td>Podstawowe wsparcie z użyciem atrybutów <code>bgcolor</code> i <code>color</code>.</td>
+            <td>Zaawansowane opcje, w tym gradienty, przezroczystość i zmienne.</td>
+        </tr>
+        <tr>
+            <td>Layout</td>
+            <td>Prymitywne, oparte na tabelach.</td>
+            <td>Nowoczesne układy z wykorzystaniem flexboxa, grid i pozycjonowania.</td>
+        </tr>
+        <tr>
+            <td>Animation</td>
+            <td>Nieobsługiwane.</td>
+            <td>Rozbudowane animacje za pomocą <code>@keyframes</code> i przejść.</td>
+        </tr>
+    </table>
+
+    <h2>New Possibilities with CSS</h2>
+    <ol>
+        <li>Oddzielenie treści od projektu dla czystszego i wielokrotnego użycia kodu.</li>
+        <li>Media queries do responsywnego projektowania.</li>
+        <li>Zaawansowane selektory dla bardziej precyzyjnego stylizowania.</li>
+        <li>Właściwości niestandardowe (zmienne CSS) do spójnego motywu.</li>
+        <li>Szeroka gama efektów, w tym cienie i filtry.</li>
+    </ol>
+
+    <h2>Drawbacks of CSS</h2>
+    <ul>
+        <li>Problemy z kompatybilnością przeglądarek, wymagające dodatkowych testów i obejść.</li>
+        <li>Złożoność zarządzania dużymi arkuszami stylów.</li>
+        <li>Potencjalne problemy z wydajnością przy nadmiarze lub źle napisanych stylach.</li>
+        <li>Brak bezpośredniego wsparcia dla debugowania, co utrudnia rozwiązywanie problemów.</li>
+    </ul>
+
+</body>
+</html>
