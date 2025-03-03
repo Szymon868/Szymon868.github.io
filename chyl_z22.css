@@ -1,0 +1,16 @@
+p {
+    color: red;
+    font-size: 22pt;
+}
+
+#grubasek_chylinski {
+    color: orange;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#dlawszyskich_chylinski {
+    color: lime;
+    font-size: 10pt;
+    font-family: Arial, sans-serif;
+}
