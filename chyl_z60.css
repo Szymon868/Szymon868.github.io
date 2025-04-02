@@ -1,0 +1,19 @@
+div{
+    background-color: green;
+    width: 613px;
+}
+#blok1_chylinski:hover{
+    background-color: blue;
+    font-size: 19mm;
+}
+#blok2_chylinski:hover{
+    background-color: lightgreen;
+    font-size: 19mm;
+}
+#blok3_chylinski:hover{
+    background-color: red;
+    font-size: 19mm;
+}
+/*Szymon Chyliński*/
+/*hover powoduje zmiany pewnych elementów po najechaniu na nie
+urządzeniem wskazującym*/
