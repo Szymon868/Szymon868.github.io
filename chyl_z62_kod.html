@@ -2,24 +2,53 @@
 <html>
 <head>
 <meta charset="utf-8"> 
+<title>Kod do zadania 62 </title>
+</head>
+<body>
+<center>
+<h1>Kod HTML:</h1>
+<textarea readonly rows="28" cols="85"><!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
 <title> Zadanie 62 </title>
 <LINK href="chyl_z62.css" rel="stylesheet" type="text/CSS">
 </head>
 <body>
-
+    
 <p>Tekst bez lang<br>
 <u>Uwaga1:</u><br>
 Język CSS dopuszcza stosowanie zarówno dużych jak i małych liter.<br>
 Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground<br>
 <u>Uwaga2:</u><br>
 Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS nie ma wpływu na jego działanie.</p><br>
-
+    
 <p lang="pl">Polski lang<br><u>CSS</u><b> Kaskadowe Arkusze Stylów</b> (z ang. Cascading Style Sheets) jest to specjalny<br>
 język stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem)<br> 
 elementów znajdujących się na stronach WWW</p>
-
+    
 <p lang="en">Angielski lang<br><u>CSS</u><b> Cascading Style Sheets</b> is a special language created to flexibly<br>
 manage the formatting (appearance) of elements on web pages</p>
 </body>
 </html>
-<!-- Szymon Chylinski 1P g1 06.04.2025 -->
+
+
+<h1>Kod CSS:</h1>
+<textarea readonly rows="15" cols="42">body{
+    background-color: rgb(192, 192, 192);
+}
+p{
+    color: rgb(255, 165, 0);
+    font-size: 6mm;
+}
+p:lang(pl){
+    color: rgb(236, 255, 62);
+    font-size: 7mm;
+}
+p:lang(en){
+    color: rgb(255, 0, 0);
+    font-size: 11mm;
+}</textarea></center>
+</body>
+</html>
+<!-- Szymon Chyliński 1p g1 06.04.2025 -->
