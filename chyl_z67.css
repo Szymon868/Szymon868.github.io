@@ -1,0 +1,36 @@
+.jeden{
+    font-size: 20pt;
+    color: gold;
+}
+.jeden::first-letter{
+    font-size: 113pt;
+    color: orange;
+}
+.dwa{
+    font-size: 18pt;
+    color: gold;
+}
+.dwa::first-letter{
+    font-size: 118pt;
+    color: lightgreen;
+}
+h1{
+    color: navy;
+    font-size: 33pt;
+}
+h1::first-letter{
+    color: silver;
+    font-size: 118pt;
+}
+.trzy{
+    color: navy;
+    font-size:  33pt;
+}
+.trzy::first-letter{
+    color: red;
+    font-size: 100pt;
+}
+.trzy::first-line{
+    color: red;
+    font-size: 20pt;
+}
