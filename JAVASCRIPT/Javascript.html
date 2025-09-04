@@ -27,11 +27,16 @@
   <button onclick="openWindow('z4_chyl.html')">zadanie4</button>
   <button onclick="openWindow('z5_chyl.html')">zadanie5</button>
   <br>
-  <button onclick="window.close()">zamknij okno</button>
+  <button onclick="closeWindow()">zamknij okno</button>
 
   <script>
     function openWindow(page) {
       window.open(page, "_blank", "width=600,height=400");
+    }
+
+    function closeWindow() {
+      window.open('', '_self'); 
+      window.close();         
     }
   </script>
 </body>
