@@ -1,26 +1,81 @@
-<html> 
-     <head> 
-            <title> Chyliński 2P</title> 
-          <script language="JavaScript"> 
-             function WinOpen_z3()  
-               { 
-window.open("z3_chyl.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200"); 
-               } 
-function WinOpen_z4()  
-               { 
-window.open("z4_chyl.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
-               } 
-function okno_zamknij()  
-                       { 
-                             window.close() 
-                       } 
-          </script> 
-      </head> 
-<body> 
-   <form> 
-        <input type="button_z3" name="zadanie3" value="zadanie3- Chyliński" onclick="WinOpen_z3(' ')"> 
-        <input type="button_z4" name="zadanie4" value="zadanie4- Chyliński" onclick="WinOpen_z4(' ')"> 
-        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
-    </form> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Chyliński 2P</title>
+  <script language="JavaScript">
+    function WinOpen_z3() {
+      window.open("z3_chyl.html","okienko_z3",
+      "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+    }
+    function WinOpen_z4() {
+      window.open("z4_chyl.html","okienko_z4",
+      "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400");
+    }
+    function okno_zamknij() {
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h1 style="font-size:2cm;">Autor szkieletu zaliczeniowego: Szymon Chyliński 2P</h1>
+
+  <form>
+    <input type="button" name="zadanie3" value="zadanie3-Chyliński"
+           onclick="WinOpen_z3()">
+    <input type="button" name="zadanie4" value="zadanie4-Chyliński"
+           onclick="WinOpen_z4()">
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+  </form>
+
+  <h2>Zalety JavaScript:</h2>
+  <p>Zaleta1 – umożliwia dynamiczne zmiany na stronie bez przeładowania.</p>
+  <p>Zaleta2 – działa w każdej nowoczesnej przeglądarce, bez dodatkowych wtyczek.</p>
+  <p>Zaleta3 – duża liczba bibliotek i frameworków ułatwiających pracę.</p>
+
+  <h2>Framework to:</h2>
+  <p>Gotowa biblioteka i zestaw narzędzi ułatwiających tworzenie aplikacji.</p>
+
+  <h2>Do aplikacji mobilnych można użyć Framework:</h2>
+  <p>React Native, Ionic, Flutter (dla JavaScript – React Native).</p>
+
+  <h2>Aplikacje responsywne to:</h2>
+  <p>Strony, które automatycznie dopasowują się do różnych ekranów (telefon, tablet, komputer).</p>
+
+  <h2>Analiza kodu:</h2>
+  <p>&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+  – Tworzy przycisk o nazwie „Nowa Strona”, który po kliknięciu uruchamia funkcję <b>WinOpen</b>.</p>
+
+  <p>window.open("obraz.html","okienko",
+  "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+  – Otwiera nowe okno przeglądarki z plikiem <b>obraz.html</b> o określonych parametrach.</p>
+
+  <h2>Parametry okna:</h2>
+  <ul>
+    <li>toolbar=no → ukrywa pasek narzędzi przeglądarki</li>
+    <li>directories=no → ukrywa przyciski katalogów</li>
+    <li>menubar=no → ukrywa menu przeglądarki</li>
+    <li>height=280 → wysokość okna w pikselach</li>
+    <li>width=160 → szerokość okna w pikselach</li>
+    <li>top=200 → odległość od górnej krawędzi ekranu</li>
+    <li>left=200 → odległość od lewej krawędzi ekranu</li>
+  </ul>
+
+  <h2>Instrukcja window.close()</h2>
+  <p>Powoduje zamknięcie bieżącego okna przeglądarki (działa tylko wtedy, gdy okno zostało otwarte przez JavaScript).</p>
+
+  <h2>Możliwości wyświetlania znaków &lsaquo; i &rsaquo;:</h2>
+  <p>Pierwsza możliwość: użycie encji HTML (&lsaquo; dla <, &rsaquo; dla >).</p>
+  <p>Druga możliwość: umieszczenie kodu wewnątrz znacznika &lsaquo;pre&rsaquo;, wtedy zostanie wyświetlony jako tekst.</p>
+
+  <h2>Przykład działania onclick:</h2>
+  <p onclick="onclickHandler();">Kliknij ten akapit, a pojawi się okno dialogowe.</p>
+
+  <script type="text/javascript">
+    function onclickHandler() {
+      alert('Akapit został kliknięty!');
+    }
+  </script>
+
+</body>
+</html>
