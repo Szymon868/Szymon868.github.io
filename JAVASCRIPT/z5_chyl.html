@@ -3,38 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Zadanie 5 - Chyliński</title>
-  <script type="text/javascript">
-    function WinOpen_chylinski_1() {
-      window.open("grafika1_chyl.html", "okno1",
-        "toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=100");
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
-    function WinOpen_chylinski_2() {
-      window.open("grafika2_chyl.html", "okno2",
-        "toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=405");
+    .container {
+      display: flex;
+      justify-content: center; /* wyśrodkowanie */
+      gap: 5px; /* odstęp 5px */
+      margin-top: 30px;
     }
-    function WinOpen_chylinski_3() {
-      window.open("grafika3_chyl.html", "okno3",
-        "toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=710");
+    .box {
+      width: 200px;
+      text-align: center;
     }
-    function WinOpen_chylinski_4() {
-      window.open("grafika4_chyl.html", "okno4",
-        "toolbar=no,directories=no,menubar=no,height=400,width=300,top=200,left=1015");
+    .box img {
+      width: 100%;
+      height: auto;
+      border: 2px solid black;
+      border-radius: 8px;
     }
-    function okno_zamknij_chylinski() {
-      window.close();
+    .box p {
+      margin-top: 5px;
+      font-weight: bold;
     }
-  </script>
+  </style>
 </head>
 <body>
   <h2 style="color:red;">
     Wykonał: Szymon Chyliński, mój numer w dzienniku 4 → (4 mod 4 = 0) → Układ 4
   </h2>
 
-  <button onclick="WinOpen_chylinski_1()">grafika1</button>
-  <button onclick="WinOpen_chylinski_2()">grafika2</button>
-  <button onclick="WinOpen_chylinski_3()">grafika3</button>
-  <button onclick="WinOpen_chylinski_4()">grafika4</button>
+  <div class="container">
+    <div class="box">
+      <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="kot">
+      <p style="color:blue;">Kot zaczyna przygodę</p>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/8Km9tLL.jpeg" alt="pies">
+      <p style="color:green;">Spotyka psa na drodze</p>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/jxaS8tT.jpeg" alt="samochód">
+      <p style="color:orange;">Razem jadą autem</p>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/W5xJXQF.jpeg" alt="odpoczynek">
+      <p style="color:purple;">Na końcu odpoczywają</p>
+    </div>
+  </div>
+
   <br><br>
-  <button onclick="okno_zamknij_chylinski()">zamknij okno</button>
+  <button onclick="window.close()">zamknij okno</button>
 </body>
 </html>
